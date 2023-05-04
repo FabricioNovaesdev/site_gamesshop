@@ -1,0 +1,152 @@
+* {
+    margin: 0;   /* SEMPRE COMECAR ZERANDO O AQRUIVO , para anexsar o CSS ao HTML coom a tag LINK  */ 
+    padding: 0; 
+    box-sizing: 0;
+}
+/* Regrea de onde as fontes vão funcinar */ 
+header ,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+}
+
+body, input , textarea { 
+    font-family: 'Roboto', sans-serif;
+}
+/* Estilizando o cabecalho */
+header {
+    padding: 16px 0; /* espacamento interno */
+    background-color: #182c61; 
+    color: #ecf0f1; /* cor do texto cabrecalho */
+}
+
+header h1,
+section h2,
+section h3 { 
+    font-weight: normal; /* para nao mudar a fonte no site */
+}
+
+/* Estilizando o menu */
+header nav li { 
+    display: inline; /* posicao das palavras em linha */
+    margin-left:  16px; ;
+    font-size: 18px; /* tamanho de font */
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none; 
+}
+/* Estilizando container */
+.container {
+    max-width: 1280px; /* largura / largura em 100% */
+    width: 100%;
+    margin: 0 auto; /* para centralizar */ 
+}
+
+header .container,
+section .container { /* Na sessao o elemento .container deve se comportar como */
+    display: flex; /* centralizar titulo */
+    align-items: center; /* centralizar na vertical */
+    justify-content: space-between; /* separar o conteudo */
+}
+/* Estilizar as imgs */
+.brands-list img {
+    height: 24px; /* tamanho */
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+/* Alinhando o conteudo da direita */
+section .container {
+    align-items: flex-start;
+}
+
+section { 
+    padding: 24px; /* crinado espacamento na sessao */
+}
+
+section h2 { 
+    margin-bottom: 16px; /* Baixo */
+}
+
+section { 
+    color: #182c61; /* tudo da sessao vai ter esta cor */
+}
+
+section p { 
+    margin-bottom: 8px; 
+}
+
+.store-front {  /* classe craido so para um img */
+    margin-right: 32px; /* Direita */
+}
+/* Estilizar medidas da classe socail */ 
+.social-links img { 
+    height: 22px;
+}
+
+.social-links li { 
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+/*Alinhas os contatos */
+#contact .container {
+    display: block;
+}
+
+.contact-metodos {
+    display: flex;
+    justify-content: space-between;
+}
+/* Estilizar os campos */
+form input,
+form textarea { 
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+/* tamanho do botao */ 
+form button{ 
+    width: 340px;
+}
+
+/* nao permitir a manipulação do usuario */ 
+form textarea {
+    resize: none; 
+    height: 180px;
+}
+
+section h3 { 
+    margin-bottom: 16px;
+}
+/* Estilizar o botao */
+form button { 
+    background-color: #182c61;
+    color:#ecf0f1 ;
+    border: none;
+    cursor:pointer; /* Setinhad e botao */
+}
+
+form button:hover { 
+    background-color: #496fd6;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182c61;
+}
+/* Estilizar caixa de mg */
+footer { 
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
